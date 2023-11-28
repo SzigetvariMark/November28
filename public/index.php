@@ -84,9 +84,9 @@
            </div>
        </div>
     </div>
+    <?php
+    include("connect.php")
+    ?>
 </body>
 </html>
 
-<?php
-    include("coonnect.php")
-    ?>
