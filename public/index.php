@@ -80,14 +80,13 @@
            </div>
            <div class="col-md-5">
            <h3>Magyar éremszerzők listája</h3>
-                <h6>A kiválasztott éremszerző adatai jelennek meg.</h6>
-                
+                <h6>A kiválasztott éremszerző adatai jelennek meg.</h6>  
            </div>
        </div>
     </div>
-    <?php
-    include("coonnect.php")
-    ?>
 </body>
 </html>
 
+<?php
+    include("coonnect.php")
+    ?>
