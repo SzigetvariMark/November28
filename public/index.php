@@ -84,9 +84,24 @@
            </div>
        </div>
     </div>
-    <?php
-    include("connect.php")
-    ?>
 </body>
 </html>
+<?php
+include("connect.php");
+
+$sql = "SELECT * FROM sportagak";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo $row["varos"] . "<br>";
+        echo $row["sportagneve"] . "<br>";
+        echo $row["helyszin"] . "<br>";
+        echo $row["versenyszamok"] . "<br>";
+    };
+} else {
+    echo "No user found";
+}
+
+mysqli_close($conn);
 
